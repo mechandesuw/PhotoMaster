@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60480A602264EEF5006919B1 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 60480A5F2264EEF5006919B1 /* frog.png */; };
 		60784C0022623C3C00CF7280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60784BFF22623C3C00CF7280 /* AppDelegate.swift */; };
 		60784C0222623C3C00CF7280 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60784C0122623C3C00CF7280 /* ViewController.swift */; };
 		60784C0522623C3C00CF7280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60784C0322623C3C00CF7280 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60480A5F2264EEF5006919B1 /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
 		60784BFC22623C3C00CF7280 /* PhotoMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60784BFF22623C3C00CF7280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60784C0122623C3C00CF7280 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				60784C0322623C3C00CF7280 /* Main.storyboard */,
 				60784C0622623C3D00CF7280 /* Assets.xcassets */,
 				60784C0822623C3D00CF7280 /* LaunchScreen.storyboard */,
+				60480A5F2264EEF5006919B1 /* frog.png */,
 				60784C0B22623C3D00CF7280 /* Info.plist */,
 			);
 			path = PhotoMaster;
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60784C0A22623C3D00CF7280 /* LaunchScreen.storyboard in Resources */,
+				60480A602264EEF5006919B1 /* frog.png in Resources */,
 				60784C0722623C3D00CF7280 /* Assets.xcassets in Resources */,
 				60784C0522623C3C00CF7280 /* Main.storyboard in Resources */,
 			);

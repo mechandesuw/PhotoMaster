@@ -75,10 +75,30 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
         text.draw(in: textRect, withAttributes: textFontAttributes)
         
         //グラフィックスコンテキストの画像を取得
-        let newImage = UIGraphicsGetImageFromCurrenImageContext()
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
         
         //グラフィックスコンテキストの編集を終了
-        UIGraphicsEndaimageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+        
+        //マスク画像（保存場所：Photomaster > Assets.xcassets)の設定
+        let maskImage = UIImage(named: "frog")!
+        
+        UIGraphicsBeginImageContext(image.size)
+        
+        image.draw(in: CGRect(x: 0, y: 0, width: image.size.width,height: image.size.height))
+        
+        let margin: CGFloat = 50.0
+        let maskRect = CGRect(x: image.size.width - maskImage.size.width - margin,
+                             y: image.size.height - maskImage.size.height - margin,
+                             width: maskImage.size.width,height: maskImage.size.height)
+        
+        maskImage.draw(in: maskRect)
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
         
         return newImage!
         
