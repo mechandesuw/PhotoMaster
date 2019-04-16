@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60480A602264EEF5006919B1 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 60480A5F2264EEF5006919B1 /* frog.png */; };
+		606EF3D82265E62300D34C71 /* PhotoMaster.app in Resources */ = {isa = PBXBuildFile; fileRef = 60784BFC22623C3C00CF7280 /* PhotoMaster.app */; };
 		60784C0022623C3C00CF7280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60784BFF22623C3C00CF7280 /* AppDelegate.swift */; };
 		60784C0222623C3C00CF7280 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60784C0122623C3C00CF7280 /* ViewController.swift */; };
 		60784C0522623C3C00CF7280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60784C0322623C3C00CF7280 /* Main.storyboard */; };
@@ -126,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60784C0A22623C3D00CF7280 /* LaunchScreen.storyboard in Resources */,
+				606EF3D82265E62300D34C71 /* PhotoMaster.app in Resources */,
 				60480A602264EEF5006919B1 /* frog.png in Resources */,
 				60784C0722623C3D00CF7280 /* Assets.xcassets in Resources */,
 				60784C0522623C3C00CF7280 /* Main.storyboard in Resources */,
