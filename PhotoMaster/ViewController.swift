@@ -82,6 +82,11 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
         
         return newImage!
         
+    }
+        
+        //元の画像にイラストを合成するメソッド
+        func drawMaskImage(image: UIImage)-> UIImage {
+            
         //マスク画像（保存場所：Photomaster > Assets.xcassets)の設定
         let maskImage = UIImage(named: "frog")!
         
@@ -95,13 +100,44 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
                              width: maskImage.size.width,height: maskImage.size.height)
         
         maskImage.draw(in: maskRect)
-        
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+            
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
         
         UIGraphicsEndImageContext()
         
         return newImage!
+        }
+    
+    //「テキスト合成」ボタンを押した時に呼ばれるメソッド
+    @IBAction func onTappedTextButton() {
+        if photoImageView.image != nil {
+            photoImageView.image = drawText(image: photoImageView.image!)
+        } else {
+            print("画像がありません")
+        }
         
+    }
+    
+    //「イラスト合成」ボタンを押した時に呼ばれるメソッド
+    @IBAction func onTappedIllustButton() {
+        if photoImageView.image != nil {
+               photoImageView.image = drawMaskImage(image: photoImageView.image!)
+        } else {
+            print("画像がありません")
+            
+        }
+    }
+    
+    //「アップロード」ボタンを押した時に呼ばれるメソッド
+    @IBAction func onTappedUploadButton() {
+        if photoImageView.image != nil {
+            //共有するアイテムを設定
+            let activityVC = UIActivityViewController(activityItems: [photoImageView.Image!,"#PhotoMaster"],applicationActivities: nil)
+            self.present(activityVC, animated: true, completion: nil)
+        } else {
+            print("画像がありません")
+            
+        }
     }
     
     
